@@ -5,14 +5,10 @@ let passengerId = 0;
 let tripId = 0;
 
 class Driver{
-  constructor(){
-    this.name = name
-    this.id = driverId++
+  constructor(name){
+    this.name = name;
+    this.id = driverId++;
     store.drivers.push(this);
-  }
-
-  newDriver(name){
-
   }
 
   trips(){
@@ -25,14 +21,10 @@ class Driver{
 }
 
 class Passenger{
-  constructor(){
-    this.name = name
-    this.id = passengerId++
-    store.passengers.push(this);
-  }
-
-  newPassenger(name){
-
+  constructor(name){
+    this.name = name;
+    this.id = passengerId++;
+    store.passengers.push(this);;
   }
 
   trips(){
@@ -45,15 +37,11 @@ class Passenger{
 }
 
 class Trip{
-  constructor(){
-    this.id = tripId++
-    this.driverId = driver.id
-    this.passengerId = passenger.id
+  constructor(driver, passenger){
+    this.id = tripId++;
+    this.driverId = driver.id;
+    this.passengerId = passenger.id;
     store.trips.push(this);
-  }
-
-  newTrips(driver, passenger){
-
   }
 
   driver(){
