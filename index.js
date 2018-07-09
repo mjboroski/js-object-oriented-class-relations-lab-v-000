@@ -1,6 +1,6 @@
 class Driver{
   constructor(){
-    
+
   }
 
   newDriver(){
@@ -8,35 +8,46 @@ class Driver{
   }
 
   trips(){
-    
+
   }
 
   passengers(){
-    
+
   }
 }
 
 class Passenger{
   constructor(){
-    
+
   }
-  
+
   newPassenger(){
 
   }
 
   trips(){
-    
+
   }
 
   drivers(){
-    
+
   }
 }
 
 class Trip{
   constructor(){
-    
+
   }
-  
+
+  newTrips(){
+
+  }
+
+  driver(){
+
+  }
+
+  passenger(){
+
+  }
 }
